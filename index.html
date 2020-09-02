@@ -4,6 +4,7 @@
 	<title>Nike Landing page Store USING HTML and CSS</title>
 	<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js"></script>
 	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 <body>
 
@@ -67,17 +68,73 @@
 
 		<div class="cart-overlay">
 			<span class="arrow"></span>
-			<a href="javascript:void(0)" class="overlay-title">Cart</a>
+			<a href="javascript:void(0)" class="overlay-title">Shopping Cart</a>
 			<hr style="border: 1px solid #eee">
 			<div class="cart-details">
-					<div class="cart-left">
-						<img src="https://i.pinimg.com/originals/e5/6b/79/e56b799b365e63c41041feb38fb7e965.jpg" >
-					</div>
+				<div class="cart-left">
+					<img src="https://i.pinimg.com/originals/e5/6b/79/e56b799b365e63c41041feb38fb7e965.jpg" >
+				</div>
 
-					<div class="cart-right">
-						<h5>Hello Man</h5>
-						
-					</div>
+				<div class="cart-right">
+					<h5>Brand</h5>
+					<h3>Mian title Best shirt for men </h3>
+				</div>
+
+				<div class="qty">
+					<span  class="decrease_qty"><i class="fa fa-minus"></i></span>
+					<span><input type="text" value="1" id="qty" ></span>
+					<span  class="increase_qty"><i class="fa fa-plus"></i></span>
+				</div>
+
+
+				<div class="remove-div">
+					<i class="fa fa-times"></i> <!-- this icon's 1) style prefix == fas and 2) icon name == camera -->
+				</div>
+			</div>
+
+
+			<div class="cart-details">
+				<div class="cart-left">
+					<img src="https://i.pinimg.com/originals/e5/6b/79/e56b799b365e63c41041feb38fb7e965.jpg" >
+				</div>
+
+				<div class="cart-right">
+					<h5>Brand</h5>
+					<h3>Mian title Best shirt for men </h3>
+				</div>
+
+				<div class="qty">
+					<span  class="decrease_qty"><i class="fa fa-minus"></i></span>
+					<span><input type="text" value="1" id="qty" ></span>
+					<span  class="increase_qty"><i class="fa fa-plus"></i></span>
+				</div>
+
+
+				<div class="remove-div">
+					<i class="fa fa-times"></i> <!-- this icon's 1) style prefix == fas and 2) icon name == camera -->
+				</div>
+			</div>
+
+			<div class="cart-details">
+				<div class="cart-left">
+					<img src="https://i.pinimg.com/originals/e5/6b/79/e56b799b365e63c41041feb38fb7e965.jpg" >
+				</div>
+
+				<div class="cart-right">
+					<h5>Brand</h5>
+					<h3>Mian title Best shirt for men </h3>
+				</div>
+
+				<div class="qty">
+					<span  class="decrease_qty"><i class="fa fa-minus"></i></span>
+					<span><input type="text" value="1" id="qty" ></span>
+					<span  class="increase_qty"><i class="fa fa-plus"></i></span>
+				</div>
+
+
+				<div class="remove-div">
+					<i class="fa fa-times"></i> <!-- this icon's 1) style prefix == fas and 2) icon name == camera -->
+				</div>
 			</div>
 		</div>
 <script>
@@ -91,7 +148,23 @@
 			$(".cart-overlay").hide();
 		});
 
+		$(".decrease_qty").click(()=>{
+			var qty = $("#qty").val();
+			qty--;
+			if (qty > 0) {
+				$("#qty").val(1);
+			}else{
+				$("#qty").val(qty);
+			}
+		});
+		
+		$(".increase_qty").click(()=>{
+			var qty = $("#qty").val();
+			qty++;
+			$("#qty").val(qty);
+		});
 	});
+
 </script>
 </body>
 </html>
