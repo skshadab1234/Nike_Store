@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Nike Landing page Store USING HTML and CSS</title>
+	<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js"></script>
+	<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+		<div class="hero">
+			<div class="navbar">
+				<div class="nav-left">
+					<div class="nav-inner">
+						<img src="https://pngimg.com/uploads/nike/nike_PNG7.png">
+						<ul>
+							<li><a href="index.html">Home</a></li>
+							<li><a href="index.html">About us</a></li>
+							<li><a href="index.html">Services</a></li>
+							<li><a href="index.html">Contact us</a></li>
+						</ul>
+					</div>
+				</div>
+				<div class="nav-right">
+					<ul>
+						<li><a href="javascript:void(0)"><img src="https://cdn4.iconfinder.com/data/icons/ios7-essence/22/common_search_lookup__-512.png"></a></li>
+						<li><a href="javascript:void(0)"  id="cart"><img src="https://www.freepnglogos.com/uploads/shopping-cart-png/shopping-cart-svg-png-icon-download-28.png" ></a></li>
+						<li><a href="javascript:void(0)"><img src="https://lh3.googleusercontent.com/proxy/hnt_P8IwJCO45oJ-7iimmITMd9EzD5ItnVXGDmaMr2QzbwY1b7ozURbRAPerZMtvI7vI1ShVmTbmSObtbNecL6FuaJh76oBASdvmQqiCAdVU2M0K9f4"></a></li>
+					</ul>
+				</div>
+			</div>
+
+			<div class="content">
+				<div class="content-left">
+					<div class="upper-text">
+						<h1>Nike</h1>
+						<h2>Just Do it</h2>
+					</div>
+					<div class="lower-text">
+						<h1>2020</h1>
+						<h2>Air Max</h2>
+						<h3>270</h3>
+					</div>
+					<img src="shoe.png">
+				</div>
+				<div class="content-right">
+					<img src="https://www.transparentpng.com/thumb/nike/NdPjKE-nike-logo-transparent-picture.png">
+					<div class="product-details">
+						<div class="price-box">
+							<div class="price">
+								<h2>AIR MAX</h2>
+								<h1>270</h1>
+								<h3>&#8377; 200</h3>
+							</div>
+							<div class="varient">
+								<div title="blue"></div>
+								<div></div>
+								<div></div>
+								<div></div>
+								<div></div>
+							</div>
+						</div>
+						<p>Add to cart</p>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="cart-overlay">
+			<span class="arrow"></span>
+			<a href="javascript:void(0)" class="overlay-title">Cart</a>
+			<hr style="border: 1px solid #eee">
+			<div class="cart-details">
+					<div class="cart-left">
+						<img src="https://i.pinimg.com/originals/e5/6b/79/e56b799b365e63c41041feb38fb7e965.jpg" >
+					</div>
+
+					<div class="cart-right">
+						<h5>Hello Man</h5>
+						
+					</div>
+			</div>
+		</div>
+<script>
+	$(document).ready(()=>{
+		$("#cart").mouseover(()=>{
+			$(".cart-overlay").fadeIn(1000);
+			$(".cart-overlay").show();
+		});
+
+		$(".cart-overlay").mouseleave(()=>{
+			$(".cart-overlay").hide();
+		});
+
+	});
+</script>
+</body>
+</html>
